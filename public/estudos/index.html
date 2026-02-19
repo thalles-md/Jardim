@@ -537,7 +537,7 @@
   </div>
   
   <footer class="w-full max-w-4xl mx-auto px-6 overflow-x-auto sm:overflow-visible">
-    <div class="py-10 border-t border-gray-200 bg-gray-50 shadow-inner mt-10">
+    <div class="py-10 border-t border-gray-200 bg-gray-50 dark:bg-[#0a0a0a] dark:border-gray-800 shadow-inner mt-10">
   <div class="container mx-auto px-4 max-w-5xl text-center">
     
     <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
@@ -550,7 +550,7 @@
         
         <div class="transform transition duration-200 hover:scale-110" style="margin: 12px 18px;">
           <a href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer" style="opacity: 0.7;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">
-            <img src="/icons/github.svg" alt="github" style="height: 26px; width: 26px; display: block;">
+            <img src="/icons/github.svg" alt="github" class="social-icon-img" style="height: 26px; width: 26px; display: block;">
           </a>
         </div>
         
@@ -561,12 +561,18 @@
       
         
         <div class="transform transition duration-200 hover:scale-110" style="margin: 12px 18px;">
-          <a href="https://www.last.fm/user/teu-user" target="_blank" rel="noopener noreferrer" style="opacity: 0.7;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">
-            <img src="/icons/lastdotfm.svg" alt="lastfm" style="height: 26px; width: 26px; display: block;">
+          <a href="https://www.last.fm/pt/user/samievski" target="_blank" rel="noopener noreferrer" style="opacity: 0.7;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">
+            <img src="/icons/lastdotfm.svg" alt="lastfm" class="social-icon-img" style="height: 26px; width: 26px; display: block;">
           </a>
         </div>
         
       
+        
+        <div class="transform transition duration-200 hover:scale-110" style="margin: 12px 18px;">
+          <a href="https://letterboxd.com/fallnstarrz/" target="_blank" rel="noopener noreferrer" style="opacity: 0.7;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">
+            <img src="/icons/letterboxd.svg" alt="letterboxd" class="social-icon-img" style="height: 26px; width: 26px; display: block;">
+          </a>
+        </div>
         
       
         
@@ -580,7 +586,7 @@
         
         <div class="transform transition duration-200 hover:scale-110" style="margin: 12px 18px;">
           <a href="https://steamcommunity.com/id/teu-id" target="_blank" rel="noopener noreferrer" style="opacity: 0.7;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">
-            <img src="/icons/steam.svg" alt="steam" style="height: 26px; width: 26px; display: block;">
+            <img src="/icons/steam.svg" alt="steam" class="social-icon-img" style="height: 26px; width: 26px; display: block;">
           </a>
         </div>
         
@@ -599,6 +605,14 @@
     </div>
   </div>
 </div>
+
+<style>
+   
+   
+  .dark .social-icon-img {
+    filter: brightness(0) invert(1);
+  }
+</style>
 
   </footer>
 </body>

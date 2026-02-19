@@ -14,7 +14,8 @@ theme = "void"
   [params.social]
     github = "https://github.com/seu-usuario"
     steam = "https://steamcommunity.com/id/teu-id"
-    lastfm = "https://www.last.fm/user/teu-user"
+    lastfm = "https://www.last.fm/pt/user/samievski"
+    letterboxd = "https://letterboxd.com/fallnstarrz/"
 
 # --- NAVEGAÇÃO PRINCIPAL ---
 
