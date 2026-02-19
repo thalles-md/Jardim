@@ -1,0 +1,52 @@
+baseURL = 'https://seu-site.com/'
+languageCode = 'en-us'
+title = "SAM"
+theme = "void"
+
+[params]
+	showTags = true
+	showCategories = true
+  # Configuração do Avatar Local (Fica em static/images/avatar.jpg)
+  [params.avatar]
+    url = "/images/avatar.jpg" 
+
+  # Redes Sociais
+  [params.social]
+    github = "https://github.com/seu-usuario"
+    steam = "https://steamcommunity.com/id/teu-id"
+    lastfm = "https://www.last.fm/user/teu-user"
+
+# --- NAVEGAÇÃO PRINCIPAL ---
+
+[[menus.main]]
+    name = "Início"
+    pageRef = "/"
+    weight = 10
+
+[[menus.main]]
+    name = "Estudos"
+    pageRef = "/estudos"
+    weight = 20
+
+[[menus.main]]
+    name = "Escritas"
+    pageRef = "/escritas"
+    weight = 30
+
+[[menus.main]]
+    name = "Categorias"
+    pageRef = "/categories"
+    weight = 50
+
+[[menus.main]]
+    name = "Tags"
+    pageRef = "/tags"
+    weight = 60
+
+# --- CONFIGURAÇÕES TÉCNICAS ---
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true # Necessário para renderizar fórmulas e componentes HTML
+  [markup.tableOfContents]
+    startLevel = 2 # Mantém o índice limpo focando nos subtítulos
