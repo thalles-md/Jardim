@@ -532,6 +532,35 @@
   
   <div class="space-y-4">
     
+      <div class="bg-white shadow-sm rounded-lg overflow-hidden">
+        <button class="category-toggle w-full text-left px-6 py-4 flex justify-between items-center focus:outline-none" data-target="category-0">
+          <div class="flex items-center">
+            <span class="font-medium text-gray-800">Categoria</span>
+            <span class="ml-2 bg-green-50 text-green-600 px-2 py-0.5 text-xs rounded-full">
+              1
+            </span>
+          </div>
+          <svg class="category-icon h-5 w-5 text-gray-500 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        
+        <div id="category-0" class="category-content hidden px-6 pb-4 border-t border-gray-100">
+          <div class="space-y-3 pt-3">
+            
+              <article class="hover:bg-gray-50 dark:hover:bg-slate-800 rounded p-3 transition-colors cursor-pointer article-link" data-href="/escritas/artigo/">
+                <h3 class="text-base font-medium mb-1 text-gray-800">
+                  Artigo
+                </h3>
+                <div class="text-xs text-gray-500">
+                  19/02/2026
+                </div>
+              </article>
+            
+          </div>
+        </div>
+      </div>
+    
   </div>
   
   <div class="mt-10 text-center">
@@ -580,7 +609,7 @@
   </div>
   
   <footer class="w-full max-w-4xl mx-auto px-6 overflow-x-auto sm:overflow-visible">
-    <div class="py-10 border-t border-gray-200 bg-gray-50 shadow-inner mt-10">
+    <div class="py-10 border-t border-gray-200 bg-gray-50 dark:bg-[#0a0a0a] dark:border-gray-800 shadow-inner mt-10">
   <div class="container mx-auto px-4 max-w-5xl text-center">
     
     <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
@@ -593,7 +622,7 @@
         
         <div class="transform transition duration-200 hover:scale-110" style="margin: 12px 18px;">
           <a href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer" style="opacity: 0.7;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">
-            <img src="/icons/github.svg" alt="github" style="height: 26px; width: 26px; display: block;">
+            <img src="/icons/github.svg" alt="github" class="social-icon-img" style="height: 26px; width: 26px; display: block;">
           </a>
         </div>
         
@@ -605,7 +634,7 @@
         
         <div class="transform transition duration-200 hover:scale-110" style="margin: 12px 18px;">
           <a href="https://www.last.fm/user/teu-user" target="_blank" rel="noopener noreferrer" style="opacity: 0.7;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">
-            <img src="/icons/lastdotfm.svg" alt="lastfm" style="height: 26px; width: 26px; display: block;">
+            <img src="/icons/lastdotfm.svg" alt="lastfm" class="social-icon-img" style="height: 26px; width: 26px; display: block;">
           </a>
         </div>
         
@@ -623,7 +652,7 @@
         
         <div class="transform transition duration-200 hover:scale-110" style="margin: 12px 18px;">
           <a href="https://steamcommunity.com/id/teu-id" target="_blank" rel="noopener noreferrer" style="opacity: 0.7;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">
-            <img src="/icons/steam.svg" alt="steam" style="height: 26px; width: 26px; display: block;">
+            <img src="/icons/steam.svg" alt="steam" class="social-icon-img" style="height: 26px; width: 26px; display: block;">
           </a>
         </div>
         
@@ -638,10 +667,18 @@
     </div>
 
     <div class="mt-8 text-sm text-gray-400 font-light">
-      &copy; 2026 SAM | <span class="italic">Soli Deo Gloria</span>
+      &copy; 2026 SAM | <span class="italic">O Conto de Um Ninja Destemido</span>
     </div>
   </div>
 </div>
+
+<style>
+   
+   
+  .dark .social-icon-img {
+    filter: brightness(0) invert(1);
+  }
+</style>
 
   </footer>
 </body>

@@ -1,4 +1,4 @@
-<div class="py-10 border-t border-gray-200 bg-gray-50 shadow-inner mt-10">
+<div class="py-10 border-t border-gray-200 bg-gray-50 dark:bg-[#0a0a0a] dark:border-gray-800 shadow-inner mt-10">
   <div class="container mx-auto px-4 max-w-5xl text-center">
     
     <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
@@ -9,7 +9,7 @@
         {{ with index $.Site.Params.social $key }}
         <div class="transform transition duration-200 hover:scale-110" style="margin: 12px 18px;">
           <a href="{{ . }}" target="_blank" rel="noopener noreferrer" style="opacity: 0.7;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">
-            <img src="/icons/{{ $fileName }}" alt="{{ $key }}" style="height: 26px; width: 26px; display: block;">
+            <img src="/icons/{{ $fileName }}" alt="{{ $key }}" class="social-icon-img" style="height: 26px; width: 26px; display: block;">
           </a>
         </div>
         {{ end }}
@@ -18,7 +18,15 @@
     </div>
 
     <div class="mt-8 text-sm text-gray-400 font-light">
-      &copy; {{ now.Format "2006" }} {{ .Site.Title }} | <span class="italic">Soli Deo Gloria</span>
+      &copy; {{ now.Format "2006" }} {{ .Site.Title }} | <span class="italic">O Conto de Um Ninja Destemido</span>
     </div>
   </div>
 </div>
+
+<style>
+  /* Se o HTML tiver a classe 'dark', ele aplica o filtro de brilho máximo nos ícones */
+  /* Isso transforma PRETO em BRANCO */
+  .dark .social-icon-img {
+    filter: brightness(0) invert(1);
+  }
+</style>
