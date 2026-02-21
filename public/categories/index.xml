@@ -6,13 +6,13 @@
     <description>Recent content in Categories on SAM</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Feb 2026 07:34:43 -0300</lastBuildDate>
+    <lastBuildDate>Fri, 20 Feb 2026 09:55:19 -0300</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Categoria</title>
-      <link>http://localhost:1313/categories/categoria/</link>
-      <pubDate>Thu, 19 Feb 2026 07:34:43 -0300</pubDate>
-      <guid>http://localhost:1313/categories/categoria/</guid>
+      <title>Ensaios</title>
+      <link>http://localhost:1313/categories/ensaios/</link>
+      <pubDate>Fri, 20 Feb 2026 09:55:19 -0300</pubDate>
+      <guid>http://localhost:1313/categories/ensaios/</guid>
       <description></description>
     </item>
   </channel>

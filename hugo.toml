@@ -20,14 +20,14 @@ theme = "void"
 # --- NAVEGAÇÃO PRINCIPAL ---
 
 [[menus.main]]
-    name = "Início"
+    name = "⌂"
     pageRef = "/"
     weight = 10
 
-[[menus.main]]
-    name = "Estudos"
-    pageRef = "/estudos"
-    weight = 20
+#[[menus.main]]
+#    name = "Estudos"
+#    pageRef = "/estudos"
+#    weight = 20
 
 [[menus.main]]
     name = "Escritas"
