@@ -1,0 +1,232 @@
+{
+  "main": {
+    "id": "1836a01cec5819f5",
+    "type": "split",
+    "children": [
+      {
+        "id": "cd7e6a60fe50a7ac",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d8ff1a147e49a349",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/escritas/passadosh2.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "passadosh2"
+            }
+          },
+          {
+            "id": "fe14962663edbce8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/escritas/abtme.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "abtme"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2900df7b53828a5b",
+    "type": "split",
+    "children": [
+      {
+        "id": "38775a38ddf1a128",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6a76218f24246494",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de arquivos"
+            }
+          },
+          {
+            "id": "e1fb69fe8110256f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Procurar"
+            }
+          },
+          {
+            "id": "036d4f141f5990b1",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "cb88fd6c6d66b06b",
+    "type": "split",
+    "children": [
+      {
+        "id": "00b9440cc096ad7f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "32bc132af0487c8c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "content/escritas/melaniek12.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Links inversos para melaniek12"
+            }
+          },
+          {
+            "id": "d59ad228f6bd2374",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "content/escritas/melaniek12.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Links de saída para melaniek12"
+            }
+          },
+          {
+            "id": "c212ced7142d53d3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "25b814ee08e322f9",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas as propriedades"
+            }
+          },
+          {
+            "id": "84cbfacbfaee01e1",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "content/escritas/melaniek12.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Sumário de melaniek12"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Criar nova base": false
+    }
+  },
+  "active": "d8ff1a147e49a349",
+  "lastOpenFiles": [
+    "public/images/SH2/Não confirmado 630835.crdownload",
+    "public/images/SH2/Não confirmado 607033.crdownload",
+    "public/images/SH2/Não confirmado 593100.crdownload",
+    "public/images/SH2/Não confirmado 41755.crdownload",
+    "public/images/SH2/Não confirmado 995872.crdownload",
+    "public/images/SH2/Não confirmado 181136.crdownload",
+    "public/images/SH2/2f562f58e164012b90398db2771dfcdc.gif",
+    "public/images/SH2/Não confirmado 205351.crdownload",
+    "public/images/SH2/LICW.jpg",
+    "content/escritas/abtme.md",
+    "content/escritas/passadosh2.md",
+    "public/images/TRIOSS/note.gif",
+    "public/images/TRIOSS/Não confirmado 496460.crdownload",
+    "{{<.md",
+    "public/images/TRIOSS/Não confirmado 442704.crdownload",
+    "public/images/TRIOSS/nshi.jpg",
+    "public/images/TRIOSS/Não confirmado 932268.crdownload",
+    "public/escritas/abtme/index.html",
+    "public/images/TRIOSS/toms.jpg",
+    "public/images/TRIOSS/jira.gif",
+    "punpunia.md",
+    "Sem título.md",
+    "content/escritas/melaniek12.md",
+    "static/images/Punpunia/Punpunia1.png",
+    "static/images/Punpunia/Punpunia2.png",
+    "static/images/Punpunia/pequenos.jpg",
+    "public/images/Punpunia/guia.jpg",
+    "content/escritas/_index.md"
+  ]
+}

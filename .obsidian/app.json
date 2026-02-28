@@ -1,0 +1,8 @@
+{
+  "attachmentFolderPath": "static/images",
+  "useMarkdownLinks": true,
+  "alwaysUpdateLinks": true,
+  "showUnsupportedFiles": true,
+  "newLinkFormat": "absolute",
+  "propertiesInDocument": "visible"
+}

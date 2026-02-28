@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" class="h-full">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Silent Hill 2: Memórias e Culpas | SAM</title>
+
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0b1220">
+<script>
+  (function() {
+    try {
+      var t = localStorage.getItem('theme');
+      var dark = t ? (t === 'dark') : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      if (dark) document.documentElement.classList.add('dark');
+    } catch (_) {}
+  })();
+</script>
+
+<style>
+   
+  html, body { 
+    font-size: 1.03rem !important; 
+    line-height: 1.6 !important;
+    background-color: #ffffff; 
+    color: #1a1a1a; 
+  }
+
+   
+  html.dark, html.dark body { 
+    background-color: #0b1220 !important; 
+    color: #e2e8f0 !important; 
+  }
+
+  html { color-scheme: light dark; }
+</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+<link rel="preconnect" href="https://busuanzi.ibruce.info" crossorigin>
+
+<link rel="icon" type="image/png" href="/favicon/favicon.png">
+<link rel="apple-touch-icon" href="/favicon/favicon.png">
+
+  
+  
+    
+    
+      
+        <link rel="stylesheet" href="/css/main.css">
+      
+    
+  
+
+
+
+
+
+<link rel="stylesheet" href="/css/style.min.b8957659e8f2f20e0a23b5cc1f1154837f41cca9f5570fd8f30cd1c087568650.css" media="screen" integrity="sha256-uJV2Wejy8g4KI7XMHxFUg39BzKn1Vw/Y8wzRwIdWhlA=">
+
+
+<link id="hljs-theme-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+<link id="hljs-theme-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+<script>
+  (function(){
+    try{
+      var t = localStorage.getItem('theme');
+      var dark = t ? (t === 'dark') : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      var l = document.getElementById('hljs-theme-light');
+      var d = document.getElementById('hljs-theme-dark');
+      if(l && d){ l.disabled = dark; d.disabled = !dark; }
+    }catch(e){}
+  })();
+  </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  
+      <script src="/js/main.js"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: "$$", right: "$$", display: true},
+        {left: "$", right: "$", display: false}
+      ],
+      throwOnError: false
+    });
+    
+    
+    document.querySelectorAll('pre code').forEach(function(codeBlock) {
+      
+      let language = '';
+      codeBlock.className.split(' ').forEach(function(cls) {
+        if (cls.startsWith('language-')) {
+          language = cls.substring(9);
+        }
+      });
+      
+      
+      const pre = codeBlock.parentNode;
+      const wrapper = pre.parentNode;
+      
+      
+      const container = document.createElement('div');
+      container.className = 'code-block-container';
+      
+      
+      const header = document.createElement('div');
+      header.className = 'code-block-header';
+      
+      
+      if (language) {
+        const langLabel = document.createElement('span');
+        langLabel.className = 'code-language-label';
+        langLabel.textContent = language.toUpperCase();
+        header.appendChild(langLabel);
+      }
+      
+      
+      const copyButton = document.createElement('button');
+      copyButton.className = 'copy-button';
+      copyButton.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" /></svg> Copy';
+      
+      copyButton.addEventListener('click', function() {
+        
+        const code = codeBlock.textContent;
+        
+        
+        navigator.clipboard.writeText(code).then(function() {
+          
+          copyButton.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg> Copied!';
+          
+          
+          setTimeout(function() {
+            copyButton.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" /></svg> Copy';
+          }, 2000);
+        });
+      });
+      
+      header.appendChild(copyButton);
+      
+      container.appendChild(header);
+      
+      if (pre.parentNode) {
+        pre.parentNode.replaceChild(container, pre);
+      }
+      container.appendChild(pre);
+      
+      
+      if (window.hljs) hljs.highlightElement(codeBlock);
+    });
+  });
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    
+    const footnoteBacklinks = document.querySelectorAll('.footnote-backref');
+    
+    footnoteBacklinks.forEach(function(backlink) {
+      backlink.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        
+        const href = backlink.getAttribute('href');
+        
+        if (href) {
+          
+          const target = document.querySelector(href);
+          
+          if (target) {
+            
+            target.scrollIntoView({ behavior: 'smooth' });
+            
+            
+            target.classList.add('footnote-highlight');
+            setTimeout(function() {
+              target.classList.remove('footnote-highlight');
+            }, 2000);
+          }
+        }
+      });
+    });
+  });
+</script>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    
+    (function themeInit() {
+      const storageKey = 'theme';
+      const root = document.documentElement;
+      const btn = document.getElementById('theme-toggle');
+      const hlLight = document.getElementById('hljs-theme-light');
+      const hlDark = document.getElementById('hljs-theme-dark');
+
+      function systemPrefersDark() {
+        return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      }
+
+      function currentPref() {
+        const v = localStorage.getItem(storageKey);
+        if (v === 'dark') return 'dark';
+        if (v === 'light') return 'light';
+        return systemPrefersDark() ? 'dark' : 'light';
+      }
+
+      function apply(theme) {
+        root.classList.toggle('dark', theme === 'dark');
+        if (btn) btn.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
+        if (btn) btn.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+        if (hlLight && hlDark) { hlLight.disabled = theme === 'dark'; hlDark.disabled = theme !== 'dark'; }
+      }
+
+      let theme = currentPref();
+      apply(theme);
+
+      if (btn) {
+        btn.addEventListener('click', function () {
+          theme = theme === 'dark' ? 'light' : 'dark';
+          localStorage.setItem(storageKey, theme);
+          apply(theme);
+        });
+      }
+
+      
+      try {
+        const media = window.matchMedia('(prefers-color-scheme: dark)');
+        const handler = function () {
+          const explicit = localStorage.getItem(storageKey);
+          if (!explicit) { theme = currentPref(); apply(theme); }
+        };
+        if (media && media.addEventListener) media.addEventListener('change', handler);
+        else if (media && media.addListener) media.addListener(handler);
+      } catch (_) {}
+    })();
+    let currentHighlighted = null;
+    let scrollArmTimer = null;
+
+    function removeHandlers() {
+      window.removeEventListener('scroll', clearOnce);
+      window.removeEventListener('keydown', clearOnce);
+      window.removeEventListener('pointerdown', clearOnce);
+      window.removeEventListener('touchstart', clearOnce);
+    }
+
+    function clearOnce() {
+      if (currentHighlighted) {
+        currentHighlighted.classList.remove('anchor-highlight');
+        currentHighlighted = null;
+      }
+      removeHandlers();
+    }
+
+    function headerHeight() {
+      const hd = document.querySelector('body > header');
+      return hd ? hd.getBoundingClientRect().height : 0;
+    }
+
+    function scrollToTarget(el) {
+      if (!el) return;
+      const offset = headerHeight() + 8; 
+      const rect = el.getBoundingClientRect();
+      const top = window.pageYOffset + rect.top - offset;
+      window.scrollTo({ top, behavior: 'smooth' });
+    }
+
+    function pickHighlightTarget(el) {
+      if (!el) return null;
+      
+      
+      if (el.tagName === 'IMG') return el;
+      
+      if (el.classList && (el.classList.contains('katex-display') || el.classList.contains('katex'))) return el;
+      
+      if (el.tagName === 'SPAN') {
+        const img = el.querySelector('img');
+        if (img) return img;
+        const kx = el.querySelector('.katex-display, .katex');
+        if (kx) return kx;
+        
+        return el;
+      }
+      
+      const head = el.closest('h1,h2,h3,h4,h5,h6');
+      if (head) return head;
+      
+      const code = el.closest('.code-block-container');
+      if (code) return code;
+      
+      const math = el.closest('.katex-display');
+      if (math) return math;
+      
+      const blk = el.closest('pre,figure,table,blockquote,li');
+      if (blk) return blk;
+      
+      if (el.closest('p')) return el;
+      return el;
+    }
+
+    function highlightById(id) {
+      if (!id) return;
+      try { id = decodeURIComponent(id); } catch (e) {}
+      const el = document.getElementById(id);
+      if (!el) return;
+      const target = pickHighlightTarget(el);
+      if (currentHighlighted && currentHighlighted !== target) {
+        currentHighlighted.classList.remove('anchor-highlight');
+      }
+      target.classList.add('anchor-highlight');
+      currentHighlighted = target;
+      
+      setTocActive(id);
+      scrollToTarget(target);
+      
+      removeHandlers();
+      
+      window.addEventListener('keydown', clearOnce, { once: true });
+      window.addEventListener('pointerdown', clearOnce, { once: true });
+      window.addEventListener('touchstart', clearOnce, { once: true });
+      if (scrollArmTimer) clearTimeout(scrollArmTimer);
+      scrollArmTimer = setTimeout(() => {
+        window.addEventListener('scroll', clearOnce, { once: true });
+      }, 1500);
+    }
+
+    
+    if (location.hash && location.hash.length > 1) {
+      
+      setTimeout(() => highlightById(location.hash.slice(1)), 0);
+    }
+
+    
+    window.addEventListener('hashchange', function () {
+      if (location.hash && location.hash.length > 1) {
+        highlightById(location.hash.slice(1));
+      }
+    });
+
+    
+    document.addEventListener('click', function (e) {
+      const a = e.target.closest('a[href^="#"]');
+      if (!a) return;
+      
+      if (a.classList && a.classList.contains('heading-anchor')) return;
+      const href = a.getAttribute('href');
+      if (!href || href === '#' || href.length < 2) return;
+      const id = href.slice(1);
+      if (!document.getElementById(id)) return; 
+      e.preventDefault();
+      if (history.pushState) { history.pushState(null, '', '#' + id); }
+      else { location.hash = id; }
+      highlightById(id);
+    }, true);
+
+    
+    window.addEventListener('popstate', function () {
+      if (location.hash && location.hash.length > 1) highlightById(location.hash.slice(1));
+    });
+
+    function setTocActive(id) {
+      try { id = decodeURIComponent(id); } catch (e) {}
+      const toc = document.getElementById('TableOfContents');
+      if (!toc) return;
+      const esc = (window.CSS && CSS.escape) ? CSS.escape : (s)=>String(s).replace(/[^a-zA-Z0-9_\-]/g, '\\$&');
+      toc.querySelectorAll('a.toc-active').forEach(a => a.classList.remove('toc-active'));
+      const link = toc.querySelector('a[href="#' + esc(id) + '"]');
+      if (link) link.classList.add('toc-active');
+    }
+
+    
+    function copyText(text) {
+      if (window.isSecureContext && navigator.clipboard && navigator.clipboard.writeText) {
+        return navigator.clipboard.writeText(text);
+      }
+      return new Promise(function (resolve, reject) {
+        try {
+          const ta = document.createElement('textarea');
+          ta.value = text;
+          ta.setAttribute('readonly', '');
+          ta.style.position = 'fixed'; ta.style.top = '-1000px'; ta.style.left = '-1000px'; ta.style.opacity = '0';
+          document.body.appendChild(ta);
+          ta.focus(); ta.select();
+          try { ta.setSelectionRange(0, ta.value.length); } catch (_) {}
+          const ok = document.execCommand && document.execCommand('copy');
+          document.body.removeChild(ta);
+          ok ? resolve() : reject(new Error('copy failed'));
+        } catch (e) { reject(e); }
+      });
+    }
+
+    
+    (function addHeadingAnchorCopy() {
+      const container = document.querySelector('article .prose');
+      if (!container) return;
+      const heads = container.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]');
+      heads.forEach((h) => {
+        const id = h.getAttribute('id');
+        if (!id) return;
+        let a = h.querySelector('.heading-anchor');
+        if (!a) {
+          a = document.createElement('a');
+          a.className = 'heading-anchor';
+          a.href = '#' + id;
+          a.setAttribute('aria-label', 'Copy link to this section');
+          a.innerHTML = '<svg viewBox="0 0 1024 1024" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M633.417143 429.007238a174.567619 174.567619 0 0 1 0 246.857143l-155.306667 155.306667a186.709333 186.709333 0 1 1-264.045714-264.045715l76.483048-76.507428 51.73638 51.736381-76.507428 76.507428a113.566476 113.566476 0 1 0 160.597333 160.597334l155.306667-155.306667a101.424762 101.424762 0 0 0 0-143.408762z m208.603428-225.816381a186.709333 186.709333 0 0 1 0 264.045714L765.561905 543.744l-51.736381-51.712 76.507428-76.507429a113.566476 113.566476 0 1 0-160.597333-160.597333l-155.306667 155.306667a101.424762 101.424762 0 0 0 0 143.408762l-51.736381 51.736381a174.567619 174.567619 0 0 1 0-246.857143l155.306667-155.306667a186.709333 186.709333 0 0 1 264.045714 0z"/></svg>';
+          h.appendChild(a);
+        }
+        function copyPermalink() {
+          const url = location.origin + location.pathname + '#' + id;
+          const done = function () {
+            a.classList.add('copied');
+            a.setAttribute('aria-label', 'Copied');
+            setTimeout(() => { a.classList.remove('copied'); a.setAttribute('aria-label', 'Copy link to this section'); }, 1200);
+          };
+          copyText(url).then(done).catch(done);
+        }
+        a.addEventListener('click', function (e) { e.preventDefault(); e.stopPropagation(); copyPermalink(); });
+
+        
+        h.classList.add('heading-clickable');
+        h.addEventListener('click', function (e) {
+          if (e.target.closest('a') && !e.target.closest('.heading-anchor')) return; 
+          copyPermalink();
+        });
+      });
+
+      
+      document.addEventListener('click', function (e) {
+        const btn = e.target.closest('a.heading-anchor');
+        if (!btn) return;
+        
+        e.preventDefault(); e.stopPropagation();
+        const href = btn.getAttribute('href') || '';
+        const id = href.startsWith('#') ? href.slice(1) : '';
+        const url = href.startsWith('#') ? (location.origin + location.pathname + href) : href;
+        copyText(url).finally(() => {
+          btn.classList.add('copied'); btn.setAttribute('aria-label', 'Copied');
+          setTimeout(() => { btn.classList.remove('copied'); btn.setAttribute('aria-label', 'Copy link to this section'); }, 1200);
+          if (id) {
+            try { if (history.pushState) history.pushState(null, '', '#' + id); else location.hash = id; } catch (_) {}
+            try { highlightById(id); } catch (_) {}
+          }
+        });
+      }, false);
+    })();
+  });
+</script>
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>1
+
+</head>
+<body class="flex flex-col bg-gray-50 font-bilingual">
+  <header class="fixed top-0 left-0 z-30 w-full bg-white shadow-sm">
+    <div class="w-full max-w-4xl mx-auto px-6 overflow-x-auto sm:overflow-visible">
+      <div class="flex items-center justify-between py-3">
+  <div class="text-lg sm:text-xl font-bold flex-shrink-0 max-w-[40%] sm:max-w-md truncate">
+    <a href="/" class="no-underline transition-colors text-gray-900 dark:text-gray-100 hover:text-blue-600 dark:hover:text-blue-300">
+      SAM
+    </a>
+  </div>
+  <div class="flex items-center gap-2">
+    
+  <nav class="flex justify-end w-full whitespace-nowrap">
+    <ul class="list-none flex flex-row items-center space-x-2 sm:space-x-4 md:space-x-6 py-2">
+    <li class="text-gray-600 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white text-base sm:text-lg">
+      <a
+        class="px-2 py-1 sm:px-3 sm:py-2 rounded hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors" href="/">⌂</a>
+    </li>
+    <li class="text-gray-600 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white text-base sm:text-lg">
+      <a
+        class="px-2 py-1 sm:px-3 sm:py-2 rounded hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors" aria-current="true" class="ancestor font-semibold" href="/escritas/">Escritas</a>
+    </li>
+    <li class="text-gray-600 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white text-base sm:text-lg">
+      <a
+        class="px-2 py-1 sm:px-3 sm:py-2 rounded hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors" href="/categories/">Categorias</a>
+    </li>
+    <li class="text-gray-600 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white text-base sm:text-lg">
+      <a
+        class="px-2 py-1 sm:px-3 sm:py-2 rounded hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors" href="/tags/">Tags</a>
+    </li>
+    </ul>
+  </nav>
+
+    <button id="theme-toggle" type="button" class="theme-toggle theme-toggle-btn ml-2 relative inline-flex h-7 w-7 items-center justify-center p-0 bg-transparent border-0 text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-300 focus:outline-none cursor-pointer" aria-label="Toggle dark mode" aria-pressed="false">
+      
+      <svg class="icon-sun h-full w-full" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M512 192c179.2 0 320 140.8 320 320s-140.8 320-320 320-320-140.8-320-320S332.8 192 512 192M512 128C300.8 128 128 300.8 128 512s172.8 384 384 384 384-172.8 384-384S723.2 128 512 128L512 128z" fill="currentColor"></path>
+        <path d="M544 416l236.8 0C774.4 403.2 768 384 761.6 371.2L544 371.2 544 416z" fill="currentColor"></path>
+        <path d="M544 608l0 44.8 217.6 0c6.4-12.8 12.8-32 19.2-44.8L544 608z" fill="currentColor"></path>
+        <path d="M544 723.2 544 768 640 768c25.6-12.8 44.8-25.6 64-44.8L544 723.2z" fill="currentColor"></path>
+        <path d="M800 492.8l-256 0 0 44.8 256 0c0-6.4 0-12.8 0-25.6S800 499.2 800 492.8z" fill="currentColor"></path>
+        <path d="M544 300.8 704 300.8c-19.2-19.2-38.4-32-64-44.8L544 256 544 300.8z" fill="currentColor"></path>
+      </svg>
+      
+      <svg class="icon-moon h-full w-full" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M512 832c-179.2 0-320-140.8-320-320s140.8-320 320-320 320 140.8 320 320S691.2 832 512 832M512 896c211.2 0 384-172.8 384-384s-172.8-384-384-384S128 300.8 128 512 300.8 896 512 896L512 896zM800 512c0-160-128-288-288-288l0 576C672 800 800 672 800 512zM480 608 243.2 608C249.6 620.8 256 640 262.4 652.8l217.6 0L480 608zM480 416 480 371.2 262.4 371.2C256 384 249.6 403.2 243.2 416L480 416zM480 300.8 480 256 384 256C358.4 268.8 339.2 281.6 320 300.8L480 300.8zM224 537.6l256 0L480 492.8l-256 0c0 6.4 0 12.8 0 19.2S224 524.8 224 537.6zM480 723.2 320 723.2c19.2 19.2 38.4 32 64 44.8l96 0L480 723.2z" fill="currentColor"></path>
+      </svg>
+    </button>
+  </div>
+</div>
+
+    </div>
+  </header>
+  
+  <div class="flex-1 flex flex-col min-h-screen pt-24">
+    <main class="flex-1 w-full max-w-4xl mx-auto px-6 overflow-x-auto sm:overflow-visible">
+      
+  <article class="max-w-4xl mx-auto bg-white rounded-lg shadow-md overflow-hidden">
+    <header class="p-8 border-b border-gray-100 relative overflow-hidden">
+      
+      
+      <div class="mb-3 flex">
+        
+        <a href="/categories/ensaios" class="text-xs inline-flex items-center px-2.5 py-1 rounded-full bg-blue-50 text-blue-600 hover:bg-blue-100 transition-colors">
+          Ensaios
+        </a>
+        
+      </div>
+      
+      
+      <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 relative">Silent Hill 2: Memórias e Culpas</h1>
+      
+      <div class="flex flex-wrap items-center text-sm text-gray-500 gap-4 relative">
+        
+        
+        <time datetime="2026-02-22T00:00:00&#43;00:00" class="flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+          </svg>
+          22/02/2026
+        </time>
+        
+        <span class="flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          10 min de leitura
+        </span>
+        
+        </div>
+    </header>
+
+    
+    
+    
+    
+    
+    <div class="px-8 pt-6" x-data="{ open: false }">
+      <button
+        class="w-full flex items-center justify-between text-sm text-gray-700 dark:text-gray-200 bg-gray-50 dark:bg-slate-800 hover:bg-gray-100 dark:hover:bg-slate-700 border border-gray-200 dark:border-slate-700 rounded-md px-4 py-2 transition-colors"
+        @click="open = !open"
+        aria-controls="toc-content"
+        :aria-expanded="open.toString()"
+      >
+        <span>Índice</span>
+        <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd" />
+        </svg>
+        <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M5 9a1 1 0 000 2h10a1 1 0 100-2H5z" clip-rule="evenodd" />
+        </svg>
+      </button>
+      <div id="toc-content" x-cloak x-show="open" x-transition class="mt-3 border border-gray-100 rounded-md bg-white p-4 text-sm leading-relaxed">
+        <div class="prose prose-sm max-w-none">
+          <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-o-começo-de-tudo-a-carta-da-antiga-esposa-sobre-o-lugar-especial-do-casal-e-a-cidade-de-silent-hill">1. O começo de tudo: a carta da &ldquo;antiga&rdquo; esposa sobre o lugar especial do casal e a cidade de Silent Hill</a>
+      <ul>
+        <li><a href="#info">1.1 A doença de Mary</a></li>
+        <li><a href="#12-a-jornada">1.2 A jornada</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-o-horror-em-silent-hill">2. O Horror em Silent Hill</a></li>
+    <li><a href="#3-a-parte-que-fica-quando-tudo-acaba-a-aceitação">3. A parte que fica quando tudo acaba: a aceitação</a></li>
+  </ul>
+</nav>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="p-8 prose prose-sm sm:prose lg:prose-lg max-w-none">
+      
+<h1 id="silent-hill-2-como-o-passado-nos-persegue-nos-molda-e-nos-condena">Silent Hill 2: Como o passado nos persegue, nos molda, e nos condena.
+  <a class="heading-anchor" href="#silent-hill-2-como-o-passado-nos-persegue-nos-molda-e-nos-condena" aria-label="Copy link to this section">
+    <svg viewBox="0 0 1024 1024" width="18" height="18" fill="currentColor" aria-hidden="true">
+      <path d="M633.417143 429.007238a174.567619 174.567619 0 0 1 0 246.857143l-155.306667 155.306667a186.709333 186.709333 0 1 1-264.045714-264.045715l76.483048-76.507428 51.73638 51.736381-76.507428 76.507428a113.566476 113.566476 0 1 0 160.597333 160.597334l155.306667-155.306667a101.424762 101.424762 0 0 0 0-143.408762z m208.603428-225.816381a186.709333 186.709333 0 0 1 0 264.045714L765.561905 543.744l-51.736381-51.712 76.507428-76.507429a113.566476 113.566476 0 1 0-160.597333-160.597333l-155.306667 155.306667a101.424762 101.424762 0 0 0 0 143.408762l-51.736381 51.736381a174.567619 174.567619 0 0 1 0-246.857143l155.306667-155.306667a186.709333 186.709333 0 0 1 264.045714 0z"/>
+    </svg>
+  </a>
+</h1>
+<p><strong>ALGUNS AVISOS ANTES DE COMEÇAR:</strong></p>
+<ol>
+<li>Isso não é uma redação do enem nem um artigo acadêmico. Não espere que eu argumente o mundo, eu não quero convencer ninguém a nada. Apenas dar minha opinião e esperar que alguém possa ser beneficiado por isso de vez em quando.</li>
+<li>Isso não é uma review do Dave Jones. Mas de toda forma, não posso falar a história e o ponto que quero tratar sem dar spoilers da obra inteira.</li>
+<li>Caso você queira dar uma opinião (anônima) sobre esse texto, você pode fazer isso <a href="https://tally.so/r/eq6P9J">aqui</a></li>
+</ol>
+<hr>
+<p>Se para <a href="http://localhost:1313/escritas/melaniek12/">o texto da Melanie Martinez</a> eu teria que ficar escutando e re-assistindo os clipes, para esse aqui a melhor forma de me inspirar para escrever ele seria deixando as fotos que tirei com minha ex-esposa (que não existe) ao lado da minha mesa, junto com meu papel e pena (tudo está sendo no computador) enquanto afogo as mágoas (não bebo) escutando as músicas que dediquei a ela.</p>
+<p>Brincadeiras a parte, você já pensou que os <em>&ldquo;tempos antigos&rdquo;</em> <strong>eram</strong> melhores e mais alegres, ou quê quando você estava em outra fase da vida ela <strong>era</strong> mais tranquila, ou quê aquele seu relacionamento <strong>era</strong> perfeito? Temos essa mania de pensar assim: quando vira memória, pensamos apenas nas <em>melhores partes</em> daquilo que se foi.</p>
+<p>E bem&hellip; entrando no assunto, se tem um jogo que eu amo, e amo mais ainda quando se trata de retratar o quanto o passado pode ter influência na nossa vida, esse jogo é Silent Hill 2. Ele é o maior exemplo do quanto o quê a gente viveu é uma faca de dois gumes na nossa mente: pode nos servir tanto para nos guiar e nos ajudar a seguir em frente, quanto para ir nos matando lentamente se ficarmos presos a ele.</p>
+<p>Para deixar claro:</p>
+<p>Eu usarei a história do jogo para tratar de assuntos reais. Mas vou tentar ao máximo que seja um texto completo até para quem nunca pegou num controle na vida. De toda forma, haverá spoilers.</p>
+<p>Ou usando uma frase do próprio jogo:</p>
+<blockquote>
+<p>&ldquo;There will be blood.&rdquo;</p>
+<p><em>(&ldquo;Haverá sangue.&rdquo;)</em></p>
+</blockquote>
+
+<h2 id="1-o-começo-de-tudo-a-carta-da-antiga-esposa-sobre-o-lugar-especial-do-casal-e-a-cidade-de-silent-hill">1. O começo de tudo: a carta da &ldquo;antiga&rdquo; esposa sobre o lugar especial do casal e a cidade de Silent Hill
+  <a class="heading-anchor" href="#1-o-come%c3%a7o-de-tudo-a-carta-da-antiga-esposa-sobre-o-lugar-especial-do-casal-e-a-cidade-de-silent-hill" aria-label="Copy link to this section">
+    <svg viewBox="0 0 1024 1024" width="18" height="18" fill="currentColor" aria-hidden="true">
+      <path d="M633.417143 429.007238a174.567619 174.567619 0 0 1 0 246.857143l-155.306667 155.306667a186.709333 186.709333 0 1 1-264.045714-264.045715l76.483048-76.507428 51.73638 51.736381-76.507428 76.507428a113.566476 113.566476 0 1 0 160.597333 160.597334l155.306667-155.306667a101.424762 101.424762 0 0 0 0-143.408762z m208.603428-225.816381a186.709333 186.709333 0 0 1 0 264.045714L765.561905 543.744l-51.736381-51.712 76.507428-76.507429a113.566476 113.566476 0 1 0-160.597333-160.597333l-155.306667 155.306667a101.424762 101.424762 0 0 0 0 143.408762l-51.736381 51.736381a174.567619 174.567619 0 0 1 0-246.857143l155.306667-155.306667a186.709333 186.709333 0 0 1 264.045714 0z"/>
+    </svg>
+  </a>
+</h2>
+<p><img src="/images/SH2/cartas.jpg" alt="cartas e esposa"></p>
+<blockquote>
+<p>&ldquo;Nos meus sonhos inquietos, eu vejo aquela cidade.</p>
+<p>Silent Hill.</p>
+<p>Você me prometeu que me levaria lá novamente algum dia, mas você nunca o fez.&rdquo;</p>
+</blockquote>
+<hr>
+<p>O jogo começa com o personagem principal (James) recebendo uma carta escrita pela sua (ainda amada) &ldquo;ex&rdquo;-esposa Mary.</p>
+<p>Logo nesse começo ouvimos a voz da Mary lendo a carta, personagem a qual a trama inteira iria girar diretamente em torno dela. Na dublagem, percebemos que a voz dela é um misto de arrependimento, nostalgia e melancolia.</p>
+<p>Na carta, ela disse que estaria esperando por ele <em>&ldquo;naquele lugar especial para os dois&rdquo;</em>. Esse lugar estava na cidade de Silent Hill, que nas histórias dos jogos, é basicamente uma cidade assombrada, ou, no mínimo, &ldquo;<em>especial</em>&rdquo;. Que parece atrair para lá todo tipo de pessoa que tenha alguma pendência em sua alma.</p>
+<p>Mas esse não é o único problema: Que lugar seria esse que é tão especial para os dois? Eles passaram um bom tempo lá. Seria o lago da cidade? O hotel em que os dois ficaram lá? O <strong>hospital</strong>?</p>
+<p>Ah, e aliás, tinha só mais outro pequeno problema também: essa esposa já estava morta fazia 3 anos.</p>
+
+<h3 id="info">1.1 A doença de Mary
+  <a class="heading-anchor" href="#info" aria-label="Copy link to this section">
+    <svg viewBox="0 0 1024 1024" width="18" height="18" fill="currentColor" aria-hidden="true">
+      <path d="M633.417143 429.007238a174.567619 174.567619 0 0 1 0 246.857143l-155.306667 155.306667a186.709333 186.709333 0 1 1-264.045714-264.045715l76.483048-76.507428 51.73638 51.736381-76.507428 76.507428a113.566476 113.566476 0 1 0 160.597333 160.597334l155.306667-155.306667a101.424762 101.424762 0 0 0 0-143.408762z m208.603428-225.816381a186.709333 186.709333 0 0 1 0 264.045714L765.561905 543.744l-51.736381-51.712 76.507428-76.507429a113.566476 113.566476 0 1 0-160.597333-160.597333l-155.306667 155.306667a101.424762 101.424762 0 0 0 0 143.408762l-51.736381 51.736381a174.567619 174.567619 0 0 1 0-246.857143l155.306667-155.306667a186.709333 186.709333 0 0 1 264.045714 0z"/>
+    </svg>
+  </a>
+</h3>
+<p><img src="/images/SH2/esposa.jpg" alt="Mary Acamada">
+Aqui, tem muita história que a gente só vai descobrindo conforme a história da obra vai se desenrolando, mas vou precisar que vocês saibam dela antes do segundo capítulo desse texto, então vou explicar de antemão:</p>
+<ul>
+<li>Primeiro que toda essa história dela estar morta há tanto tempo é questionável. Vamos descobrir que não podemos confiar totalmente na narrativa de James. O jogo se passa pela visão dele, mas ele claramente não bate bem quando se trata de lembrar de certos acontecimentos sensíveis da vida dele.</li>
+<li>Mas para adiantar sobre a morte dela: Ela viveu os últimos dias de forma miserável em uma doença. Ela vivia acamada, tossindo, vomitando, debilitada, quase imóvel, ela praticamente não tinha mais o quê podemos chamar de vida.</li>
+<li>E guardem muito bem essas informações: tanto ela se sentia culpada por estar sendo um peso pro James, quanto ele se culpava por sentir falta de conviver normalmente com ela sem precisar estar cuidando dela o tempo todo. De poder passear, cuidar, e ter <em>relações</em> com ela como um casal normal teria. <strong>Coisas essas que eles não faziam a muito tempo.</strong></li>
+<li>E para piorar, conforme a doença dela foi avançando, <em>ela foi ficando cada vez mais ranzinza e chata.</em> Sabe quando estamos doente e ficamos &ldquo;amuados&rdquo; sem querer falar muito com ninguém ou extremamente irritados? Bem, ela estava assim, só que mil vezes pior. Ou seja, eles além de tudo começaram a viver em pequenas brigas, mesmo no leito dela.</li>
+</ul>
+<hr>
+
+<h3 id="12-a-jornada">1.2 A jornada
+  <a class="heading-anchor" href="#12-a-jornada" aria-label="Copy link to this section">
+    <svg viewBox="0 0 1024 1024" width="18" height="18" fill="currentColor" aria-hidden="true">
+      <path d="M633.417143 429.007238a174.567619 174.567619 0 0 1 0 246.857143l-155.306667 155.306667a186.709333 186.709333 0 1 1-264.045714-264.045715l76.483048-76.507428 51.73638 51.736381-76.507428 76.507428a113.566476 113.566476 0 1 0 160.597333 160.597334l155.306667-155.306667a101.424762 101.424762 0 0 0 0-143.408762z m208.603428-225.816381a186.709333 186.709333 0 0 1 0 264.045714L765.561905 543.744l-51.736381-51.712 76.507428-76.507429a113.566476 113.566476 0 1 0-160.597333-160.597333l-155.306667 155.306667a101.424762 101.424762 0 0 0 0 143.408762l-51.736381 51.736381a174.567619 174.567619 0 0 1 0-246.857143l155.306667-155.306667a186.709333 186.709333 0 0 1 264.045714 0z"/>
+    </svg>
+  </a>
+</h3>
+<p>E com tudo isso dito, após ler a carta vemos que o protagonista, sim,  fica desacreditado. Sabendo o quão impossível era aquilo estar acontecendo.</p>
+<p>Mas mesmo assim o seu amor pela esposa ainda era forte demais para ele simplesmente ignorar essa carta e não fazer nada. Então ele decide ir atrás e investigar: <em>&ldquo;De onde essa carta saiu? A Mary realmente poderia estar nessa cidade? Impossível, ela morreu daquela maldita doença anos atrás&hellip;&rdquo;</em></p>
+<p>Ele volta para aquela cidade. Ele volta para Silent Hill em busca da sua esposa (ou&hellip; a <em>alma</em> dela talvez? enfim, ele estava sempre em busca de algo)</p>
+<p>E é aí que nosso jogo começa: uma aventura sombria, melancólica, e muito, mas muito <em>perturbadora</em> na maior parte do tempo.</p>
+
+<h2 id="2-o-horror-em-silent-hill">2. O Horror em Silent Hill
+  <a class="heading-anchor" href="#2-o-horror-em-silent-hill" aria-label="Copy link to this section">
+    <svg viewBox="0 0 1024 1024" width="18" height="18" fill="currentColor" aria-hidden="true">
+      <path d="M633.417143 429.007238a174.567619 174.567619 0 0 1 0 246.857143l-155.306667 155.306667a186.709333 186.709333 0 1 1-264.045714-264.045715l76.483048-76.507428 51.73638 51.736381-76.507428 76.507428a113.566476 113.566476 0 1 0 160.597333 160.597334l155.306667-155.306667a101.424762 101.424762 0 0 0 0-143.408762z m208.603428-225.816381a186.709333 186.709333 0 0 1 0 264.045714L765.561905 543.744l-51.736381-51.712 76.507428-76.507429a113.566476 113.566476 0 1 0-160.597333-160.597333l-155.306667 155.306667a101.424762 101.424762 0 0 0 0 143.408762l-51.736381 51.736381a174.567619 174.567619 0 0 1 0-246.857143l155.306667-155.306667a186.709333 186.709333 0 0 1 264.045714 0z"/>
+    </svg>
+  </a>
+</h2>
+<p><img src="/images/SH2/ruas.gif" alt="Caminhos Entrelaçados"></p>
+<p>Como eu disse, eu não vou fazer uma <em>review</em> do jogo, mas sim explicar as metáforas e simbolismos que o jogo utiliza (e ele utiliza MUITAS), pois é exatamente isso que faz dele um jogo tão foda para mim.</p>
+<p>Nesse mundo do jogo, nada é por acaso. Você por exemplo não luta contra <em>&ldquo;zumbis&rdquo;</em> simplesmente porquê alguma empresa decidiu acabar com o mundo  (Abraços Resident Evil!) ou com assombrações genéricas feitas para dar susto. Aqui, cada criatura monstruosa que aparece durante a jornada de James representa aspectos obscuros da sua mente. Ou seja, basicamente Silent Hill não é apenas &ldquo;<em>uma cidade assombrada</em>&rdquo;. Ela se molda para cada pessoa que acaba parando lá. (E inclusive, encontramos outras pessoas normais na cidade, mas isso é assunto para eu escrever em outro texto.)</p>
+<p>Imagine que ao invés de ficar mal pelas coisas que acontecessem para você ou se sentir culpado por coisas do passado, essas coisas se materializassem em monstros que você tem que realmente matar diariamente para não ser morto pelo peso delas. É exatamente essa a dinâmica desse jogo.</p>
+<p>Então, falarei sobre um em específico que, pelo seu significado e importância, pode muito bem valer por vários outros que eu poderia citar.</p>
+<p>As &ldquo;Figuras Agonizantes&rdquo;:
+<img src="/images/SH2/agonia.jpg" alt="agonias"></p>
+<p>Olhe bem para essa figura. Consegue pensar em alguma coisa? Bem, ela está diretamente conectada com o começo do texto. Esses monstros representam a <em>Mary</em> quando estava doente. E há algo que eu acho muito interessante de se pensar: eles são os primeiros que a gente encontra no jogo. O quê reforça ainda mais o conceito da cidade ser um &ldquo;purgatório&rdquo; com as memórias do James, e a primeira delas que ele teria que enfrentar seria a da pessoa pela qual ele tinha mais afeto na vida.</p>
+<p>Na vida real, quando temos um problema ou um trauma, eles não aparecem na forma de monstros físicos. Mas na sua mente, e em seus pensamentos, eles se moldam exatamente do tamanho e formato do seu trauma.</p>
+<p>O principal fator para o cérebro humano aprender ou fixar alguma coisa é através da <strong>repetição</strong>, tanto é que se você for em qualquer tutorial sobre qualquer coisa na internet, vão te recomendar fazer aquilo todos os dias para &ldquo;pegar o jeito&rdquo;. Acontece da exata mesma forma para coisas ruins também. Vamos nos acostumando com as coisas que pensamos, e <em>como</em> pensamos sobre ela. Então facilmente um fantasma do seu passado pode ser mais perigoso do quê uma pessoa de carne e osso, pois quando perdemos nossa vida por causa da nossa própria cabeça, temos uma morte pior do quê qualquer arma poderia causar. Pois é a dor de você mesmo se matrizando, de você mesmo estar segurando as correntes que te prendem, de você mesmo estar balançando o chicote que te condena.</p>
+<p>Bem&hellip; voltando para o jogo (eu preciso fazer isso para chegar onde eu quero chegar), eu preciso que você se lembre da minha <a href="#info">explicação sobre a doença da Mary</a>. / <em>Ah, tem muita coisa que não caberia numa leitura de 10 minutos sobre essa obra&hellip;</em> / Mas enfim, toda essa culpa que o James carrega&hellip; tudo que ele passa naquela cidade, e todo o remorso que ele sempre sentiu por fim tem um significado maior. Esse significado aparece quando ele decide <strong>encarar</strong> o passado de frente, sem a idealização que engana, nem com a martirização da culpa. Vendo como ele <strong>realmente aconteceu.</strong> Ela não morreu da doença dela &ldquo;a três anos atrás&rdquo;</p>
+<p>Foi o próprio James que matou sua própria esposa. Três dias antes da narrativa começar e de termos contato com a história. Três dias apenas. O corpo dela ainda estava no carro dele no começo do jogo. Para acabar com o seu sofrimento, para acabar com o sofrimento dela.</p>
+
+<h2 id="3-a-parte-que-fica-quando-tudo-acaba-a-aceitação">3. A parte que fica quando tudo acaba: a aceitação
+  <a class="heading-anchor" href="#3-a-parte-que-fica-quando-tudo-acaba-a-aceita%c3%a7%c3%a3o" aria-label="Copy link to this section">
+    <svg viewBox="0 0 1024 1024" width="18" height="18" fill="currentColor" aria-hidden="true">
+      <path d="M633.417143 429.007238a174.567619 174.567619 0 0 1 0 246.857143l-155.306667 155.306667a186.709333 186.709333 0 1 1-264.045714-264.045715l76.483048-76.507428 51.73638 51.736381-76.507428 76.507428a113.566476 113.566476 0 1 0 160.597333 160.597334l155.306667-155.306667a101.424762 101.424762 0 0 0 0-143.408762z m208.603428-225.816381a186.709333 186.709333 0 0 1 0 264.045714L765.561905 543.744l-51.736381-51.712 76.507428-76.507429a113.566476 113.566476 0 1 0-160.597333-160.597333l-155.306667 155.306667a101.424762 101.424762 0 0 0 0 143.408762l-51.736381 51.736381a174.567619 174.567619 0 0 1 0-246.857143l155.306667-155.306667a186.709333 186.709333 0 0 1 264.045714 0z"/>
+    </svg>
+  </a>
+</h2>
+<p><img src="/images/SH2/maozinha.gif" alt="final"></p>
+<blockquote>
+<p>&ldquo;E é por isso que eu entendo se você me odiar</p>
+<p>Mas eu quero que você saiba disso&hellip;</p>
+<p>Que eu sempre vou te amar.</p>
+<p>E mesmo que nossa vida juntos tenha que ter acabado assim, eu ainda não trocaria por nada nesse mundo.</p>
+<p>Nós tivemos momentos incríveis juntos.&rdquo;</p>
+</blockquote>
+<p>Esse jogo tem vários finais, mas aqui eu vou me concentrar no &ldquo;melhor&rdquo; possível. Que não é exatamente um conto de fadas ainda, mas é <strong>o único caminho possível para sair do ciclo</strong>. Mas antes, deixa eu falar sobre os ruins.</p>
+<p>O final feliz desse jogo <strong>não</strong> é a Mary ressuscitando magicamente (o quê, pelo tanto de assombração e magia nesse jogo, é possível). Esse é inclusive justamente o final que eu considero o pior de todos. Pois é onde a negação do James atinge seu ápice. Ele não aceita a morte da sua esposa, ela não aceita o passado, ele não aguenta seu <strong>peso</strong>. E ao invés de tentar suportá-lo, ele decide fingir que esse peso não existe e finge que tudo ainda está perfeitamente bem.</p>
+<p>Outro final que eu considero tão ruim quanto, é o que ele <em>não aprende nada com seus erros, apesar de ter noção sobre eles</em>. James encontra uma nova mulher (que na verdade era uma ilusão feita pela cidade para fazer ele permanecer lá), e então ela começa a tossir, assim como a outra tinha começado a fazer outrora. Acredito que quase nada pode ser pior que negar o passado, a não ser repetir as suas piores partes de novo e de novo. Por considerar a vida o bem mais precioso a ser cuidado e admirado, para mim é um cenário de eterna miséria repetir para sempre os mesmos erros, como um cachorro que corre atrás do próprio rabo, ou como uma cobra que engole a si mesma apenas por não ter nada mais para consumir. Assim também fazemos nós: por achar que não há mais o quê viver, às vezes ruminamos o quê na verdade já está morto.</p>
+<p>O melhor que pode acontecer nesse jogo é quando ele reconhece, aceita, e decide sair da cidade. Ele não terá a Mary de volta, nunca mais. Por mais que ele queira. Ele não irá projetar a Mary em outra mulher pois sabe que acabaria terminando da mesma terrível forma novamente.</p>
+<p>O final bom é quando ele tem uma <strong>chance.</strong> Uma chance para se redimir, para mudar, para seguir outro caminho. E que assim também sejamos nós: a cada dia, com uma nova chance de poder olhar o passado com respeito, o presente como uma dádiva, e o futuro como uma a estrada pela qual a gente nunca passou, mas sabe que ela valerá a pena, pois vamos caminhar por ela por nossa própria vontade e capacidade. Pois no fim da vida, é tudo sobre as chances que aproveitamos ou sobre aquelas que deixamos passar. E o passado, presente, e futuro, é apenas uma grande pintura que fizemos com nossas próprias mãos.</p>
+<hr>
+<ul>
+<li>Muito obrigado à você que leu até o final desse texto.</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+    
+    <div class="px-8 pb-2 text-sm text-gray-500 flex items-center">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+      </svg>
+      Atualizado em 28/02/2026
+    </div>
+    
+
+    <footer class="px-8 py-6 bg-gray-50 border-t border-gray-100">
+      
+  <div class="tags-container">
+    <div class="text-gray-700 dark:text-gray-300 font-medium mb-2">Tags:</div>
+    <div class="flex flex-wrap gap-2">
+        <a href="/tags/jogos/" class="tag-chip inline-flex items-center px-3 py-1 rounded-full text-sm bg-blue-50 dark:bg-slate-800 text-blue-700 dark:text-blue-300 hover:bg-blue-100 dark:hover:bg-slate-700 transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-labelledby="tagIconTitle" role="img">
+            <title id="tagIconTitle">Tag</title>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+          </svg>
+          Jogos
+        </a>
+        <a href="/tags/filosofia/" class="tag-chip inline-flex items-center px-3 py-1 rounded-full text-sm bg-blue-50 dark:bg-slate-800 text-blue-700 dark:text-blue-300 hover:bg-blue-100 dark:hover:bg-slate-700 transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-labelledby="tagIconTitle" role="img">
+            <title id="tagIconTitle">Tag</title>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+          </svg>
+          Filosofia
+        </a>
+    </div>
+  </div>
+
+      
+      
+      
+      
+      
+      <nav class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        
+        <a href="/escritas/melaniek12/" class="group block p-4 bg-white border border-gray-200 rounded-lg hover:border-blue-300 hover:bg-blue-50/30 transition-colors">
+          <div class="text-xs text-gray-500 mb-1 flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+            Anterior
+          </div>
+          <div class="text-sm font-medium text-gray-900 group-hover:text-blue-700 line-clamp-2">Melanie Martinez e sua Importância para as mulheres alternativas</div>
+        </a>
+        
+
+        
+        <a href="/escritas/abtme/" class="group block p-4 bg-white border border-gray-200 rounded-lg hover:border-blue-300 hover:bg-blue-50/30 transition-colors sm:text-right sm:col-start-2">
+          <div class="text-xs text-gray-500 mb-1 flex items-center sm:justify-end">
+            <span class="sm:order-1 mr-0 sm:ml-1">Próximo</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1.5 text-gray-400 sm:order-2 sm:ml-1 sm:mr-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+          <div class="text-sm font-medium text-gray-900 group-hover:text-blue-700 line-clamp-2">Por quê eu estou criando esse site, Minhas inspirações atuais e Quem sou eu.</div>
+        </a>
+        
+      </nav>
+      
+      
+      <div class="mt-6 flex justify-center">
+        <a href="/" class="inline-flex items-center text-gray-600 hover:text-blue-600 transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+          </svg>
+          Voltar ao Início
+        </a>
+      </div>
+    </footer>
+  </article>
+
+  <div class="max-w-4xl mx-auto mt-8 bg-white rounded-lg shadow-md overflow-hidden theme-card" style="--tw-prose-body: #374151; --tw-prose-headings: #111827; --tw-prose-links: #2563eb; --tw-prose-links-hover: #1d4ed8; --tw-prose-code-bg: #f3f4f6; color: #374151;">
+    
+ 
+  </div>
+
+    </main>
+  </div>
+  
+  <footer class="w-full max-w-4xl mx-auto px-6 overflow-x-auto sm:overflow-visible">
+    <div class="py-10 border-t border-gray-200 bg-gray-50 dark:bg-[#0a0a0a] dark:border-gray-800 shadow-inner mt-10">
+  <div class="container mx-auto px-4 max-w-5xl text-center">
+    
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
+      
+      
+
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+
+    </div>
+
+    <div class="mt-8 text-sm text-gray-400 font-light">
+      &copy; 2026 SAM | <span class="italic">EU QUERO VIVER!</span>
+    </div>
+  </div>
+</div>
+
+<style>
+   
+   
+  .dark .social-icon-img {
+    filter: brightness(0) invert(1);
+  }
+</style>
+
+  </footer>
+</body>
+</html>

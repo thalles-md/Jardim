@@ -2,7 +2,6 @@
 <meta name="viewport" content="width=device-width">
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
 
-<!-- Prevent theme flash: set dark class ASAP and background color before CSS loads -->
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0b1220">
 <script>
@@ -13,35 +12,34 @@
       if (dark) document.documentElement.classList.add('dark');
     } catch (_) {}
   })();
-  </script>
+</script>
+
 <style>
-  /* Fallback para modo claro (quando a classe .dark NÃO está presente) */
-  html, body { 
+  /* AJUSTE FINO: LEVEMENTE MAIOR (APROX. +2pt) */
+  html, body { 
+    font-size: 1.03rem !important; 
+    line-height: 1.6 !important;
     background-color: #ffffff; 
-    color: #1a1a1a; /* Texto quase preto para contraste no branco */
+    color: #1a1a1a; 
   }
 
-  /* Estilo para quando a classe .dark está ativa */
-  html.dark, html.dark body { 
-    background-color: #0b1220; 
-    color: #e2e8f0; /* Texto claro para o fundo escuro */
+  /* Mantendo o modo escuro */
+  html.dark, html.dark body { 
+    background-color: #0b1220 !important; 
+    color: #e2e8f0 !important; 
   }
 
-  html { color-scheme: light dark; }
+  html { color-scheme: light dark; }
 </style>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<!-- Speed up Busuanzi counter load -->
 <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
 <link rel="preconnect" href="https://busuanzi.ibruce.info" crossorigin>
 
-<!-- Favicon configuration -->
 <link rel="icon" type="image/png" href="/favicon/favicon.png">
 <link rel="apple-touch-icon" href="/favicon/favicon.png">
-<!-- End of favicon configuration -->
-
 {{ if eq hugo.Environment "development" }}
   {{ partial "head/css.html" . }}
   {{ partial "head/js.html" . }}
@@ -50,5 +48,4 @@
   {{ partialCached "head/js.html" . }}
 {{ end }}
 
-<!-- Busuanzi page/site view counter (load early to avoid delayed render) -->
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>1

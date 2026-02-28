@@ -3,46 +3,46 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/escritas/</loc>
-    <lastmod>2026-02-20T09:55:19-03:00</lastmod>
+    <lastmod>2026-02-28T03:14:41-03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-02-20T09:55:19-03:00</lastmod>
+    <lastmod>2026-02-28T03:14:41-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/ensaios/</loc>
-    <lastmod>2026-02-20T09:55:19-03:00</lastmod>
+    <loc>http://localhost:1313/tags/pessoal/</loc>
+    <lastmod>2026-02-28T03:14:41-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/escritas/passadop/</loc>
-    <lastmod>2026-02-20T09:55:19-03:00</lastmod>
+    <loc>http://localhost:1313/escritas/abtme/</loc>
+    <lastmod>2026-02-28T03:14:41-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/posts/</loc>
+    <lastmod>2026-02-28T03:14:41-03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-02-20T09:55:19-03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/escritas/melaniek12/</loc>
-    <lastmod>2026-02-20T01:40:16-03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/mulheres/</loc>
-    <lastmod>2026-02-20T01:40:16-03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/m%C3%BAsica/</loc>
-    <lastmod>2026-02-20T01:40:16-03:00</lastmod>
+    <lastmod>2026-02-28T03:14:41-03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2026-02-20T01:40:16-03:00</lastmod>
+    <lastmod>2026-02-28T03:14:41-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/escritas/punpunia/</loc>
-    <lastmod>2026-02-20T00:25:15-03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/ensaios/</loc>
-    <lastmod>2026-02-20T00:25:15-03:00</lastmod>
+    <loc>http://localhost:1313/categories/ensaios/</loc>
+    <lastmod>2026-02-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/filosofia/</loc>
-    <lastmod>2026-02-20T00:25:15-03:00</lastmod>
+    <lastmod>2026-02-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/mang%C3%A1s/</loc>
-    <lastmod>2026-02-20T00:25:15-03:00</lastmod>
+    <loc>http://localhost:1313/tags/jogos/</loc>
+    <lastmod>2026-02-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/rascunhos/</loc>
-    <lastmod>2026-02-20T00:25:15-03:00</lastmod>
+    <loc>http://localhost:1313/escritas/passadosh2/</loc>
+    <lastmod>2026-02-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/escritas/melaniek12/</loc>
+    <lastmod>2026-02-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/mulheres/</loc>
+    <lastmod>2026-02-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/m%C3%BAsica/</loc>
+    <lastmod>2026-02-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/estudos/</loc>
   </url><url>
