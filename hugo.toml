@@ -36,15 +36,15 @@ lastmod = ["lastmod", ":fileModTime", "date"]
     pageRef = "/escritas"
     weight = 30
 
-[[menus.main]]
-    name = "Categorias"
-    pageRef = "/categories"
-    weight = 50
+#[[menus.main]]
+#    name = "Categorias"
+#    pageRef = "/categories"
+#    weight = 50
 
-[[menus.main]]
-    name = "Tags"
-    pageRef = "/tags"
-    weight = 60
+#[[menus.main]]
+#    name = "Tags"
+#    pageRef = "/tags"
+#    weight = 60
 
 # --- CONFIGURAÇÕES TÉCNICAS ---
 
