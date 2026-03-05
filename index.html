@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jardim Natural</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV: para adicionar itens ao menu, copie um <a> dentro de .menu -->
+<nav>
+  <a href="index.html" class="site-name">Jardim Natural</a>
+  <details>
+    <summary>Menu</summary>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <!-- ADICIONE NOVOS LINKS DE MENU AQUI -->
+      <a href="escritas.html">Escritas</a>
+    </div>
+  </details>
+</nav>
+
+<main>
+  <section class="home-hero">
+
+    <!-- FOTO DE PERFIL: troque o src pelo caminho da sua foto -->
+    <img src="images/ME/toms.jpg" alt="Foto" onerror="this.src='https://via.placeholder.com/110'">
+
+    <!-- FRASE: edite o texto entre as aspas -->
+    <p class="phrase">"Aqui vai uma frase de sua preferencia."</p>
+
+    <!-- ICONES DAS REDES SOCIAIS
+         Troque o href="#" pela URL do seu perfil.
+         Para adicionar uma rede: copie um bloco <a>...</a>.
+         Os arquivos SVG devem estar na raiz do projeto. -->
+    <div class="social-links">
+
+      <!-- ICONE 1: Last.fm - troque href pelo seu perfil -->
+      <a href="#" target="_blank" aria-label="Last.fm">
+        <img src="images/lastdotfm.svg" alt="Last.fm">
+      </a>
+
+      <!-- ICONE 2: Letterboxd - troque href pelo seu perfil -->
+      <a href="#" target="_blank" aria-label="Letterboxd">
+        <img src="/images/letterboxd.svg" alt="Letterboxd">
+      </a>
+
+      <!-- ADICIONE MAIS ICONES AQUI seguindo o mesmo padrao -->
+
+    </div>
+
+  </section>
+
+  <!-- CATEGORIAS
+       Para adicionar uma nova categoria: copie um bloco <a class="cat-card">
+       e atualize: href, cat-icon (emoji), cat-title e cat-desc.
+       Lembre de criar o HTML da nova pagina e adicionar o link no menu. -->
+  <section class="categories">
+    <h2>Categorias</h2>
+    <div class="cat-grid">
+
+      <a href="escritas.html" class="cat-card">
+        <span class="cat-icon">&#x2712;</span>
+        <span class="cat-title">Escritas</span>
+        <span class="cat-desc">Ensaios e pensamentos</span>
+      </a>
+
+      <!-- NOVA CATEGORIA - descomente e edite para adicionar
+      <a href="outra.html" class="cat-card">
+        <span class="cat-icon">&#127925;</span>
+        <span class="cat-title">Nome</span>
+        <span class="cat-desc">Descricao curta</span>
+      </a>
+      -->
+
+    </div>
+  </section>
+</main>
+
+<footer>2026 - SAM</footer>
+
+</body>
+</html>

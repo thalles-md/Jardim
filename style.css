@@ -1,0 +1,276 @@
+﻿/* FONTES
+   Lora  -> corpo dos textos/artigos (serifa, leitura longa)
+   Inter -> interface: nav, labels, footer (sem serifa, limpo)
+   Para trocar as fontes, edite a linha @import e as variaveis
+   --serif e --sans em :root abaixo.
+---------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* VARIAVEIS GLOBAIS
+   Edite aqui para mudar cores, fontes e largura dos artigos
+   em todo o site de uma vez so.
+---------------------------------------------------------------- */
+:root {
+  --bg:     #faf9f7;   /* cor de fundo geral */
+  --text:   #1a1a1a;   /* cor do texto principal */
+  --muted:  #888;      /* cor de textos secundarios/apagados */
+  --border: #e8e5e0;   /* cor das bordas e divisores */
+
+  /* largura maxima dos artigos - aumente ou diminua conforme gosto */
+  --max-article: 860px;
+
+  /* largura maxima da home (hero + categorias) */
+  --max-home: 680px;
+
+  --serif: 'Lora', Georgia, serif;
+  --sans:  'Inter', system-ui, sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--serif);
+  font-size: 19px;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* NAV
+   Barra de navegacao fixa no topo.
+   - Lado esquerdo: nome do site (link para home)
+   - Lado direito: menu dropdown via <details>/<summary>
+   Para adicionar itens ao menu, edite os arquivos HTML.
+---------------------------------------------------------------- */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  z-index: 100;
+  padding: 0 2rem;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .site-name {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--text);
+  letter-spacing: 0.03em;
+}
+
+nav details { position: relative; }
+
+nav summary {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  color: var(--muted);
+  cursor: pointer;
+  list-style: none;
+  padding: 0.3rem 0;
+  user-select: none;
+}
+nav summary::-webkit-details-marker { display: none; }
+nav summary:hover { color: var(--text); }
+
+/* dropdown do menu */
+nav .menu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 0.8rem);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  min-width: 160px;
+  padding: 0.5rem 0;
+}
+
+nav .menu a {
+  display: block;
+  padding: 0.5rem 1.2rem;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  text-decoration: none;
+  color: var(--text);
+}
+nav .menu a:hover { background: var(--border); }
+
+/* HOME: HERO
+   Secao central da pagina inicial.
+   Contem: foto de perfil, frase e icones das redes sociais.
+---------------------------------------------------------------- */
+main { margin-top: 52px; } /* empurra o conteudo abaixo da nav fixa */
+
+.home-hero {
+  text-align: center;
+  padding: 5rem 2rem 3rem;
+  max-width: var(--max-home);
+  margin: 0 auto;
+}
+
+/* foto de perfil circular */
+.home-hero img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  border: 2px solid var(--border);
+}
+
+/* frase abaixo da foto */
+.home-hero .phrase {
+  font-size: 1.05rem;
+  color: var(--muted);
+  font-style: italic;
+  margin-bottom: 1.8rem;
+}
+
+/* HOME: ICONES DE REDES SOCIAIS
+   Cada <a> dentro de .social-links deve conter um <img> com o SVG.
+   Para adicionar uma rede: copie um bloco <a>...</a> no index.html
+   e troque o src pelo caminho do seu arquivo SVG.
+   Tamanho padrao dos icones: 22x22px (ajuste abaixo).
+---------------------------------------------------------------- */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.4rem;
+  align-items: center;
+}
+
+.social-links a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: opacity 0.2s;
+}
+
+.social-links a img {
+  width: 22px;    /* tamanho dos icones */
+  height: 22px;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+.social-links a:hover img { opacity: 1; }
+
+/* HOME: CATEGORIAS
+   Grade de cartoes que levam para as secoes do site.
+   Para adicionar uma categoria: copie um bloco <a class="cat-card">
+   no index.html e atualize href, icone, titulo e descricao.
+   O grid se ajusta automaticamente ao numero de cartoes.
+---------------------------------------------------------------- */
+.categories {
+  max-width: var(--max-home);
+  margin: 3.5rem auto 5rem;
+  padding: 0 2rem;
+}
+
+.categories h2 {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 1.2rem;
+}
+
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+/* ADICIONE NOVAS CATEGORIAS NO index.html copiando um bloco .cat-card */
+.cat-card {
+  display: block;
+  padding: 1.5rem 1.2rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--text);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.cat-card:hover {
+  border-color: #bbb;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.cat-card .cat-icon  { font-size: 1.6rem; margin-bottom: 0.7rem; display: block; }
+.cat-card .cat-title { font-family: var(--sans); font-size: 0.95rem; font-weight: 500; display: block; margin-bottom: 0.3rem; }
+.cat-card .cat-desc  { font-family: var(--sans); font-size: 0.78rem; color: var(--muted); }
+
+/* ARTIGOS: WRAPPER
+   Usado tanto na listagem de artigos (escritas.html)
+   quanto no corpo de cada artigo individual.
+   A largura e controlada por --max-article em :root.
+---------------------------------------------------------------- */
+.article-wrap {
+  max-width: var(--max-article);
+  margin: 4rem auto 6rem;
+  padding: 0 2rem;
+}
+
+/* ARTIGOS: LISTAGEM
+   Lista de links usada na pagina de categoria (ex: escritas.html).
+   Para adicionar um artigo: copie um <li> e atualize href e texto.
+---------------------------------------------------------------- */
+.article-list { list-style: none; }
+
+.article-list li {
+  border-bottom: 1px solid var(--border);
+  padding: 1.2rem 0;
+}
+
+.article-list a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 1rem;
+  font-family: var(--sans);
+}
+.article-list a:hover { color: var(--muted); }
+
+/* ARTIGOS: CORPO
+   Estilo compartilhado por todos os artigos individuais.
+   Aplicado via class="article-body" injetada pelo script.
+---------------------------------------------------------------- */
+.article-body h1 { font-size: 1.9rem; font-weight: 500; line-height: 1.25; margin-bottom: 2rem; }
+.article-body h2 { font-size: 1.35rem; font-weight: 500; margin: 2.5rem 0 1rem; }
+.article-body h3 { font-family: var(--sans); font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin: 2rem 0 0.8rem; }
+.article-body p  { margin-bottom: 1.4rem; }
+.article-body a  { color: var(--text); }
+
+.article-body blockquote {
+  border-left: 2px solid var(--border);
+  padding: 0.5rem 1.2rem;
+  color: var(--muted);
+  font-style: italic;
+  margin: 1.8rem 0;
+}
+
+.article-body ul,
+.article-body ol  { padding-left: 1.4rem; margin-bottom: 1.4rem; }
+.article-body li  { margin-bottom: 0.4rem; }
+
+.article-body img,
+.article-body video { max-width: 100%; display: block; margin: 2rem auto; }
+
+.article-body hr     { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
+.article-body strong { font-weight: 600; }
+
+/* FOOTER
+   Rodape simples presente em todas as paginas.
+---------------------------------------------------------------- */
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
