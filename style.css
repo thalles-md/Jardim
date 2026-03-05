@@ -182,9 +182,10 @@ main { margin-top: 52px; } /* empurra o conteudo abaixo da nav fixa */
 
 .cat-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1rem;
 }
+
 
 /* ADICIONE NOVAS CATEGORIAS NO index.html copiando um bloco .cat-card */
 .cat-card {
