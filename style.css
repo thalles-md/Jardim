@@ -169,8 +169,8 @@ main { margin-top: 52px; }
     padding: 2rem 1.5rem 4rem;
     gap: 2rem;
   }
-  .home-sidebar { position: static; text-align: left; }
-  .profile-pic  { margin: 0 0 1rem 0; }
+  .home-sidebar { position: static; text-align: center; }
+  .profile-pic  { margin: 0 auto 1rem; }
 }
 
 /* HOME: ICONES DE REDES SOCIAIS
