@@ -114,11 +114,31 @@ main { margin-top: 52px; }
   align-items: start;
 }
 
-/* COLUNA ESQUERDA: foto, frase, links */
+/* COLUNA ESQUERDA */
 .home-sidebar {
   text-align: center;
   position: sticky;
   top: 72px;
+}
+
+.sidebar-title {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.content-title {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 1rem;
 }
 
 .profile-pic {
@@ -126,36 +146,31 @@ main { margin-top: 52px; }
   height: 110px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 1rem;
+  margin: 0 auto 1rem;
   border: 2px solid var(--border);
   display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .phrase {
-  font-size: 0.88rem;
+  font-size: 0.85rem;
   color: var(--muted);
   font-style: italic;
   margin-bottom: 1.2rem;
   line-height: 1.5;
 }
 
-/* COLUNA DIREITA: bio + categorias */
-.home-content {
-  min-width: 0;
-}
+/* COLUNA DIREITA */
+.home-content { min-width: 0; }
 
-/* Responsivo: em telas pequenas, empilha */
+/* Responsivo */
 @media (max-width: 640px) {
   .home-layout {
     grid-template-columns: 1fr;
     padding: 2rem 1.5rem 4rem;
     gap: 2rem;
   }
-  .home-sidebar {
-    position: static;
-  }
+  .home-sidebar { position: static; text-align: left; }
+  .profile-pic  { margin: 0 0 1rem 0; }
 }
 
 /* HOME: ICONES DE REDES SOCIAIS
@@ -444,7 +459,6 @@ footer {
 /* Responsivo: em telas pequenas, texto não recua */
 @media (max-width: 480px) {
   .tweet-body { padding-left: 0; }
-  .tweet-time { display: none; }
 }
 
 /* BIO / INTRODUÇÃO
@@ -453,11 +467,7 @@ footer {
    Para adicionar parágrafos, copie um <p class="bio-text">.
 ---------------------------------------------------------------- */
 .bio {
-  margin-bottom: 2.5rem;
-}
-
-.bio-inner {
-  padding-bottom: 0;
+  margin-bottom: 2rem;
 }
 
 .bio-text {

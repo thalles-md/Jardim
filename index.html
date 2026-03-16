@@ -1,32 +1,21 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jardim Natural</title>
-  <link rel="stylesheet" href="style.css">
+  <title>SAM</title>
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
 
-<!-- NAV: para adicionar itens ao menu, copie um <a> dentro de .menu -->
-<nav>
-  <a href="/index.html" class="site-name">Jardim</a>
-  <details>
-    <summary>Menu</summary>
-    <div class="menu">
-      <a href="/index.html">Home</a>
-      <!-- ADICIONE NOVOS LINKS DE MENU AQUI -->
-      <a href="escritas.html">Escritas</a>
-      <a href="posts.html">Postagens</a>
-    </div>
-  </details>
-</nav>
+<nav></nav>
 
 <main>
   <div class="home-layout">
 
     <!-- COLUNA ESQUERDA: perfil -->
     <aside class="home-sidebar">
+      <h3 class="sidebar-title">SAM</h3>
 
       <!-- FOTO DE PERFIL: troque o src pelo caminho da sua foto -->
       <img class="profile-pic" src="/images/eu.jpg" alt="Foto" onerror="this.src='https://via.placeholder.com/110'">
@@ -42,7 +31,6 @@
         <a href="https://letterboxd.com/fallnstarrz/" target="_blank" aria-label="Letterboxd">
           <img src="/images/letterboxd.svg" alt="Letterboxd">
         </a>
-        <!-- ADICIONE MAIS ICONES AQUI seguindo o mesmo padrao -->
         <a href="https://github.com/thalles-md" target="_blank" aria-label="GitHub">
           <img src="/images/github.svg" alt="GitHub">
         </a>
@@ -53,46 +41,37 @@
     <!-- COLUNA DIREITA: bio + categorias -->
     <div class="home-content">
 
-      <!-- BIO: edite o texto livremente, aceita <a>, <b>, <br> -->
       <section class="bio">
-        <p class="bio-text">Olá! Seja bem vindo ao meu site. Eu criei esse lugar para poder criar e me expressar na internet de uma forma que eu tenha um pouco mais de controle. A seção <a href="escritas.html">Escritas</a> tem meus queridos textos (eu amo escrever) e na seção <a href="posts.html">Postagens</a> tem postagens periódicas que eu irei fazendo, é um lugar mais informal e descontraído que nos meus textos.<br><br>Por enquanto, estruturo esse site usando IA pois desenvolvimento web não é minha área, mas TODO E QUALQUER <b>CONTEÚDO</b> DELE é escrito inteiramente por mim. Inclusive, todo o código desse site é aberto caso você queira copiar ele. Mas peço que nunca faça isso com as coisas que escrevo.</p>
-        <!-- Para adicionar mais parágrafos, copie a linha acima -->
+        <h3 class="content-title">Sobre</h3>
+        <p class="bio-text">Olá! Seja bem vindo ao meu site. Eu criei esse lugar para poder criar e me expressar na internet de uma forma que eu tenha um pouco mais de controle. A seção <a href="/escritas.html">Escritas</a> tem meus queridos textos (eu amo escrever) e na seção <a href="/posts/posts.html">Postagens</a> tem postagens periódicas que eu irei fazendo, é um lugar mais informal e descontraído que nos meus textos.</p>
+        <p class="bio-text">Por enquanto, estruturo esse site usando IA pois desenvolvimento web não é minha área, mas TODO E QUALQUER <b>CONTEÚDO</b> DELE é escrito inteiramente por mim. Inclusive, todo o código desse site é aberto caso você queira copiar ele. Mas peço que nunca faça isso com as coisas que escrevo.</p>
       </section>
 
-      <!-- CATEGORIAS: copie um bloco <a class="cat-card"> para adicionar -->
       <section class="categories">
         <h2>Categorias</h2>
         <div class="cat-grid">
 
-          <a href="escritas.html" class="cat-card">
+          <a href="/escritas.html" class="cat-card">
             <span class="cat-icon">&#x2712;</span>
             <span class="cat-title">Escritas</span>
             <span class="cat-desc">Ensaios e pensamentos</span>
           </a>
 
-          <a href="posts/posts.html" class="cat-card">
+          <a href="/posts/posts.html" class="cat-card">
             <span class="cat-icon">&#x260E;</span>
             <span class="cat-title">Postagens</span>
             <span class="cat-desc">Posts Rápidos</span>
           </a>
 
-          <!-- NOVA CATEGORIA - descomente e edite para adicionar
-          <a href="outra.html" class="cat-card">
-            <span class="cat-icon">&#127925;</span>
-            <span class="cat-title">Nome</span>
-            <span class="cat-desc">Descricao curta</span>
-          </a>
-          -->
-
         </div>
       </section>
 
-    </div><!-- /home-content -->
-
-  </div><!-- /home-layout -->
+    </div>
+  </div>
 </main>
 
 <footer>2026 - SAM</footer>
 
+<script src="/nav.js"></script>
 </body>
 </html>
