@@ -100,35 +100,62 @@ nav .menu a {
 }
 nav .menu a:hover { background: var(--border); }
 
-/* HOME: HERO
-   Secao central da pagina inicial.
-   Contem: foto de perfil, frase e icones das redes sociais.
+/* HOME: LAYOUT DUAS COLUNAS
 ---------------------------------------------------------------- */
-main { margin-top: 52px; } /* empurra o conteudo abaixo da nav fixa */
+main { margin-top: 52px; }
 
-.home-hero {
-  text-align: center;
-  padding: 5rem 2rem 3rem;
-  max-width: var(--max-home);
+.home-layout {
+  max-width: 900px;
   margin: 0 auto;
+  padding: 4rem 2rem 6rem;
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 3rem;
+  align-items: start;
 }
 
-/* foto de perfil circular */
-.home-hero img {
+/* COLUNA ESQUERDA: foto, frase, links */
+.home-sidebar {
+  text-align: center;
+  position: sticky;
+  top: 72px;
+}
+
+.profile-pic {
   width: 110px;
   height: 110px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   border: 2px solid var(--border);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* frase abaixo da foto */
-.home-hero .phrase {
-  font-size: 1.05rem;
+.phrase {
+  font-size: 0.88rem;
   color: var(--muted);
   font-style: italic;
-  margin-bottom: 1.8rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
+}
+
+/* COLUNA DIREITA: bio + categorias */
+.home-content {
+  min-width: 0;
+}
+
+/* Responsivo: em telas pequenas, empilha */
+@media (max-width: 640px) {
+  .home-layout {
+    grid-template-columns: 1fr;
+    padding: 2rem 1.5rem 4rem;
+    gap: 2rem;
+  }
+  .home-sidebar {
+    position: static;
+  }
 }
 
 /* HOME: ICONES DE REDES SOCIAIS
@@ -166,9 +193,7 @@ main { margin-top: 52px; } /* empurra o conteudo abaixo da nav fixa */
    O grid se ajusta automaticamente ao numero de cartoes.
 ---------------------------------------------------------------- */
 .categories {
-  max-width: var(--max-home);
-  margin: 3.5rem auto 5rem;
-  padding: 0 2rem;
+  margin-top: 2rem;
 }
 
 .categories h2 {
@@ -428,15 +453,11 @@ footer {
    Para adicionar parágrafos, copie um <p class="bio-text">.
 ---------------------------------------------------------------- */
 .bio {
-  max-width: var(--max-home);
-  margin: 0 auto 0;
-  padding: 0 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .bio-inner {
-  border-top: 1px solid var(--border);
-  padding-top: 2rem;
-  padding-bottom: 2.5rem;
+  padding-bottom: 0;
 }
 
 .bio-text {

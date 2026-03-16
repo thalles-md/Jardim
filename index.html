@@ -3,94 +3,96 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SAM</title>
+  <title>Jardim Natural</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- NAV: para adicionar itens ao menu, copie um <a> dentro de .menu -->
-<nav></nav>
+<nav>
+  <a href="/index.html" class="site-name">Jardim</a>
+  <details>
+    <summary>Menu</summary>
+    <div class="menu">
+      <a href="/index.html">Home</a>
+      <!-- ADICIONE NOVOS LINKS DE MENU AQUI -->
+      <a href="escritas.html">Escritas</a>
+      <a href="posts.html">Postagens</a>
+    </div>
+  </details>
+</nav>
 
 <main>
-  <section class="home-hero">
+  <div class="home-layout">
 
-    <!-- FOTO DE PERFIL: troque o src pelo caminho da sua foto -->
-    <img src="/images/eu.jpg" alt="Foto" onerror="this.src='https://via.placeholder.com/110'">
+    <!-- COLUNA ESQUERDA: perfil -->
+    <aside class="home-sidebar">
 
-    <!-- FRASE: edite o texto entre as aspas -->
-    <p class="phrase">"Torne-se quem você é."</p>
+      <!-- FOTO DE PERFIL: troque o src pelo caminho da sua foto -->
+      <img class="profile-pic" src="/images/eu.jpg" alt="Foto" onerror="this.src='https://via.placeholder.com/110'">
 
-    <!-- ICONES DAS REDES SOCIAIS
-         Troque o href="#" pela URL do seu perfil.
-         Para adicionar uma rede: copie um bloco <a>...</a>.
-         Os arquivos SVG devem estar na raiz do projeto. -->
-    <div class="social-links">
+      <!-- FRASE: edite o texto entre as aspas -->
+      <p class="phrase">"Torne-se quem você é."</p>
 
-      <!-- ICONE 1: Last.fm - troque href pelo seu perfil -->
-      <a href="https://www.last.fm/pt/user/samievski" target="_blank" aria-label="Last.fm">
-        <img src="images/lastdotfm.svg" alt="Last.fm">
-      </a>
+      <!-- ICONES DAS REDES SOCIAIS -->
+      <div class="social-links">
+        <a href="https://www.last.fm/pt/user/samievski" target="_blank" aria-label="Last.fm">
+          <img src="/images/lastdotfm.svg" alt="Last.fm">
+        </a>
+        <a href="https://letterboxd.com/fallnstarrz/" target="_blank" aria-label="Letterboxd">
+          <img src="/images/letterboxd.svg" alt="Letterboxd">
+        </a>
+        <!-- ADICIONE MAIS ICONES AQUI seguindo o mesmo padrao -->
+        <a href="https://github.com/thalles-md" target="_blank" aria-label="GitHub">
+          <img src="/images/github.svg" alt="GitHub">
+        </a>
+      </div>
 
-      <!-- ICONE 2: Letterboxd - troque href pelo seu perfil -->
-      <a href="https://letterboxd.com/fallnstarrz/" target="_blank" aria-label="Letterboxd">
-        <img src="/images/letterboxd.svg" alt="Letterboxd">
-      </a>
+    </aside>
 
-      <!-- ADICIONE MAIS ICONES AQUI seguindo o mesmo padrao -->
+    <!-- COLUNA DIREITA: bio + categorias -->
+    <div class="home-content">
 
-	  <a href="https://github.com/thalles-md" target="_blank" aria-label="GitHub">
-	          <img src="/images/github.svg" alt="GitHub">
-	  </a>
+      <!-- BIO: edite o texto livremente, aceita <a>, <b>, <br> -->
+      <section class="bio">
+        <p class="bio-text">Olá! Seja bem vindo ao meu site. Eu criei esse lugar para poder criar e me expressar na internet de uma forma que eu tenha um pouco mais de controle. A seção <a href="escritas.html">Escritas</a> tem meus queridos textos (eu amo escrever) e na seção <a href="posts.html">Postagens</a> tem postagens periódicas que eu irei fazendo, é um lugar mais informal e descontraído que nos meus textos.<br><br>Por enquanto, estruturo esse site usando IA pois desenvolvimento web não é minha área, mas TODO E QUALQUER <b>CONTEÚDO</b> DELE é escrito inteiramente por mim. Inclusive, todo o código desse site é aberto caso você queira copiar ele. Mas peço que nunca faça isso com as coisas que escrevo.</p>
+        <!-- Para adicionar mais parágrafos, copie a linha acima -->
+      </section>
 
-    </div>
+      <!-- CATEGORIAS: copie um bloco <a class="cat-card"> para adicionar -->
+      <section class="categories">
+        <h2>Categorias</h2>
+        <div class="cat-grid">
 
-  </section>
+          <a href="escritas.html" class="cat-card">
+            <span class="cat-icon">&#x2712;</span>
+            <span class="cat-title">Escritas</span>
+            <span class="cat-desc">Ensaios e pensamentos</span>
+          </a>
 
-  <!-- BIO / INTRODUÇÃO
-       Edite o texto dentro de .bio-text livremente.
-       Aceita parágrafos (<p>), links (<a>) e quebras (<br>).
-       A linha divisória aparece automaticamente acima. -->
-  <section class="bio">
-    <div class="bio-inner">
-      <p class="bio-text">Olá! Seja bem vindo ao meu site. Eu criei esse lugar para poder criar e me expressar na internet de uma forma que eu tenha um pouco mais de controle. A seção <a href="escritas.html">Escritas</a> tem meus queridos textos (eu amo escrever) e na seção <a href="/posts/posts.html">Postagens</a> tem postagens periódicas que eu irei fazendo, é um lugar mais informal e descontraído que nos meus textos. <br> Por enquanto, estruturo esse site usando IA pois desenvolvimento web não é minha área, mas TODO E QUALQUER <b>CONTEÚDO</b> DELE é escrito inteiramente por mim. Inclusive, todo o código desse site é aberto caso você queira copiar ele. Mas peço que nunca faça isso com as coisas que escrevo.</p>
-      <!-- Para adicionar mais parágrafos, copie a linha acima -->
-    </div>
-  </section>
+          <a href="posts/posts.html" class="cat-card">
+            <span class="cat-icon">&#x260E;</span>
+            <span class="cat-title">Postagens</span>
+            <span class="cat-desc">Posts Rápidos</span>
+          </a>
 
-  <!-- CATEGORIAS
-       Para adicionar uma nova categoria: copie um bloco <a class="cat-card">
-       e atualize: href, cat-icon (emoji), cat-title e cat-desc.
-       Lembre de criar o HTML da nova pagina e adicionar o link no menu. -->
-  <section class="categories">
-    <h2>Categorias</h2>
-    <div class="cat-grid">
+          <!-- NOVA CATEGORIA - descomente e edite para adicionar
+          <a href="outra.html" class="cat-card">
+            <span class="cat-icon">&#127925;</span>
+            <span class="cat-title">Nome</span>
+            <span class="cat-desc">Descricao curta</span>
+          </a>
+          -->
 
-      <a href="escritas.html" class="cat-card">
-        <span class="cat-icon">&#x2712;</span>
-        <span class="cat-title">Escritas</span>
-        <span class="cat-desc">Ensaios e pensamentos</span>
-      </a>
+        </div>
+      </section>
 
-      <a href="/posts/posts.html" class="cat-card">
-        <span class="cat-icon">&#x260E;</span>
-        <span class="cat-title">Postagens</span>
-        <span class="cat-desc">Posts Rápidos</span>
-      </a>
+    </div><!-- /home-content -->
 
-      <!-- NOVA CATEGORIA - descomente e edite para adicionar
-      <a href="outra.html" class="cat-card">
-        <span class="cat-icon">&#127925;</span>
-        <span class="cat-title">Nome</span>
-        <span class="cat-desc">Descricao curta</span>
-      </a>
-      -->
-
-    </div>
-  </section>
+  </div><!-- /home-layout -->
 </main>
 
 <footer>2026 - SAM</footer>
 
-<script src="/nav.js"></script>
 </body>
 </html>
