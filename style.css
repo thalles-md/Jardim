@@ -325,8 +325,6 @@ footer {
   max-width: 600px;
   margin: 4rem auto 6rem;
   padding: 0 1.5rem;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* Cada postagem individual */
@@ -404,18 +402,18 @@ footer {
 /* Imagem do post */
 .tweet-img {
   margin-top: 0.9rem;
-  margin-left: calc(-1 * (42px + 0.75rem));
 }
 
 .tweet-img img,
 .tweet-body > img,
 .tweet-text img {
-  width: calc(100% + 42px + 0.75rem);
+  width: 100%;
   height: 300px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 10px;
   border: 1px solid var(--border);
   display: block;
+  background: var(--bg);
 }
 
 /* Responsivo: em telas pequenas, texto não recua */
