@@ -3,23 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jardim Natural</title>
+  <title>SAM</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- NAV: para adicionar itens ao menu, copie um <a> dentro de .menu -->
-<nav>
-  <a href="/index.html" class="site-name">Jardim</a>
-  <details>
-    <summary>Menu</summary>
-    <div class="menu">
-      <a href="/index.html">Home</a>
-      <!-- ADICIONE NOVOS LINKS DE MENU AQUI -->
-      <a href="escritas.html">Escritas</a>
-    </div>
-  </details>
-</nav>
+<nav></nav>
 
 <main>
   <section class="home-hero">
@@ -56,6 +46,17 @@
 
   </section>
 
+  <!-- BIO / INTRODUÇÃO
+       Edite o texto dentro de .bio-text livremente.
+       Aceita parágrafos (<p>), links (<a>) e quebras (<br>).
+       A linha divisória aparece automaticamente acima. -->
+  <section class="bio">
+    <div class="bio-inner">
+      <p class="bio-text">Olá! Seja bem vindo ao meu site. Eu criei esse lugar para poder criar e me expressar na internet de uma forma que eu tenha um pouco mais de controle. A seção <a href="escritas.html">Escritas</a> tem meus queridos textos (eu amo escrever) e na seção <a href="/posts/posts.html">Postagens</a> tem postagens periódicas que eu irei fazendo, é um lugar mais informal e descontraído que nos meus textos. <br> Por enquanto, estruturo esse site usando IA pois desenvolvimento web não é minha área, mas TODO E QUALQUER <b>CONTEÚDO</b> DELE é escrito inteiramente por mim. Inclusive, todo o código desse site é aberto caso você queira copiar ele. Mas peço que nunca faça isso com as coisas que escrevo.</p>
+      <!-- Para adicionar mais parágrafos, copie a linha acima -->
+    </div>
+  </section>
+
   <!-- CATEGORIAS
        Para adicionar uma nova categoria: copie um bloco <a class="cat-card">
        e atualize: href, cat-icon (emoji), cat-title e cat-desc.
@@ -68,6 +69,12 @@
         <span class="cat-icon">&#x2712;</span>
         <span class="cat-title">Escritas</span>
         <span class="cat-desc">Ensaios e pensamentos</span>
+      </a>
+
+      <a href="/posts/posts.html" class="cat-card">
+        <span class="cat-icon">&#x260E;</span>
+        <span class="cat-title">Postagens</span>
+        <span class="cat-desc">Posts Rápidos</span>
       </a>
 
       <!-- NOVA CATEGORIA - descomente e edite para adicionar
@@ -84,5 +91,6 @@
 
 <footer>2026 - SAM</footer>
 
+<script src="/nav.js"></script>
 </body>
 </html>

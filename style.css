@@ -314,3 +314,141 @@ footer {
   transition: color 0.2s;
 }
 .copy-btn:hover { color: #fff; }
+
+/* ================================================================
+   FEED DE TWEETS
+   Adicione este bloco ao final do seu style.css
+================================================================ */
+
+/* Container principal do feed */
+.tweet-feed {
+  max-width: 600px;
+  margin: 4rem auto 6rem;
+  padding: 0 1.5rem;
+}
+
+/* Cada postagem individual */
+.tweet {
+  border-bottom: 1px solid var(--border);
+  padding: 1.4rem 0;
+}
+.tweet:first-child { padding-top: 0; }
+
+/* Cabeçalho: avatar + nome + handle + data */
+.tweet-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Foto de perfil pequena */
+.tweet-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+}
+
+/* Nome e @handle */
+.tweet-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  flex: 1;
+}
+
+.tweet-name {
+  font-family: var(--sans);
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.tweet-handle {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+/* Data e hora — alinhada à direita */
+.tweet-time {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  color: var(--muted);
+  white-space: nowrap;
+  margin-left: auto;
+}
+
+/* Corpo da postagem */
+.tweet-body { padding-left: calc(42px + 0.75rem); }
+
+.tweet-text {
+  font-family: var(--serif);
+  font-size: 0.97rem;
+  line-height: 1.65;
+  color: var(--text);
+  margin-bottom: 0;
+}
+
+.tweet-text a {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* Imagem do post */
+.tweet-img {
+  margin-top: 0.9rem;
+}
+
+.tweet-img img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  display: block;
+}
+
+/* Responsivo: em telas pequenas, texto não recua */
+@media (max-width: 480px) {
+  .tweet-body { padding-left: 0; }
+  .tweet-time { display: none; }
+}
+
+/* BIO / INTRODUÇÃO
+   Seção de texto livre abaixo do hero na home.
+   Edite o conteúdo no index.html dentro de .bio-text.
+   Para adicionar parágrafos, copie um <p class="bio-text">.
+---------------------------------------------------------------- */
+.bio {
+  max-width: var(--max-home);
+  margin: 0 auto 0;
+  padding: 0 2rem;
+}
+
+.bio-inner {
+  border-top: 1px solid var(--border);
+  padding-top: 2rem;
+  padding-bottom: 2.5rem;
+}
+
+.bio-text {
+  font-family: var(--serif);
+  font-size: 0.97rem;
+  line-height: 1.8;
+  color: var(--text);
+  margin-bottom: 1.2rem;
+}
+
+.bio-text:last-child { margin-bottom: 0; }
+
+.bio-text a {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
