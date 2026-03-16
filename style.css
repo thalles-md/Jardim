@@ -404,13 +404,15 @@ footer {
   margin-top: 0.9rem;
 }
 
-.tweet-img img {
+.tweet-img img,
+.tweet-body > img {
   width: 100%;
   max-height: 400px;
   object-fit: cover;
   border-radius: 10px;
   border: 1px solid var(--border);
   display: block;
+  margin-top: 0.9rem;
 }
 
 /* Responsivo: em telas pequenas, texto não recua */
